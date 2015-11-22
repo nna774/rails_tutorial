@@ -13,6 +13,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_select 'div#error_explanation'
     assert_select 'div.alert'
     assert_select 'div.alert-danger'
+    assert_not is_logged_in?
   end
 
   test "valid signup information" do
@@ -27,5 +28,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_select 'div.alert'
     assert_select 'div.alert-success'
     assert_not flash[:success].nil?
+    assert is_logged_in?
   end
 end
