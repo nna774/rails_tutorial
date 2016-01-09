@@ -74,4 +74,12 @@ class UserTest < ActiveSupport::TestCase
   test "authenticated? should return false for a user with nil digest" do
     assert_not @user.authenticated?('')
   end
+
+  # test "same definition1" do
+  #   %w(hoge huga homu mado).each do |str|
+  #     assert (User.digest(str) == User.digest_(str))
+  #     assert (User.digest(str) == User.digest__(str))
+  #   end
+  # end
+  ## 別に同じパスワードなら同じ結果になるわけではないのを忘れていた…。
 end
