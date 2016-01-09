@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+gem 'faker'
 gem 'bcrypt'
 gem 'bootstrap-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
